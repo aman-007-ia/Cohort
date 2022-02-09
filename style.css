@@ -1,0 +1,237 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    height: 100vh;
+    font-family: 'poppins', sans-serif;
+}
+
+.container {
+    border: 1px solid;
+    margin: 20px;
+    height: 73%;
+    width: 70%;
+}
+
+.tittle {
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: large;
+}
+
+.left {
+    background-color: white;
+    color: #000;
+    width: 30%;
+    float: left;
+}
+
+.right {
+    background-color: white;
+    color: #000;
+    width: 70%;
+    float: right;
+    border-left: 1px solid;
+    border-bottom: 1px solid;
+}
+
+#fligths {
+    width: auto;
+    height: 400px;
+    margin: 30px 20px;
+    border: 1px solid #000;
+    overflow: auto;
+}
+
+#fligths::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Track */
+
+#fligths::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+/* Handle */
+
+#fligths::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+
+/* Handle on hover */
+
+#fligths::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.text-left {
+    color: #000;
+    width: 70%;
+    float: left;
+    font-size: large;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
+.text-right {
+    font-size: small;
+    color: #000;
+    float: right;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.heading {
+    border-bottom: 1px solid;
+    display: flex;
+}
+
+.headings {
+    display: flex;
+}
+
+.left-side {
+    color: #000;
+    font-size: medium;
+    float: left;
+    padding-right: 2px;
+    padding-top: 5px;
+    padding-left: 20px;
+    border: 1px solid;
+    margin-top: 20px;
+    margin-left: 16px;
+    border-top-left-radius: 3em 5em;
+    border-top-right-radius: 1em;
+}
+
+.right-side {
+    font-size: 15px;
+    color: #000;
+    padding-top: 5px;
+    padding-right: 20px;
+    padding-left: 2\px;
+    border: 1px solid;
+    margin-right: 50px;
+    margin-top: 20px;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 3em 5em;
+}
+
+.card {
+    margin-left: 15px;
+    margin-top: 15px;
+    height: 130px;
+    margin-right: 10px;
+    border: 1px solid;
+}
+
+.slidecontainer {
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    font-size: large;
+    padding-bottom: 10px;
+}
+
+.left-btn {
+    border: 1px solid;
+    margin-top: 15px;
+    margin-right: 113px;
+    margin-left: 15px;
+    font-size: small;
+}
+
+.left-btns {
+    margin-left: 58px;
+    height: auto;
+    border: 1px solid;
+    width: 40px;
+    padding-bottom: 1px;
+}
+
+.card-wala {
+    margin-left: 15px;
+    margin-top: 15px;
+    height: 70px;
+    margin-right: 10px;
+    border: 1px solid;
+}
+
+.sreachbtn {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+
+.card-left {
+    margin-left: 15px;
+    height: auto;
+    margin-right: 10px;
+    border: 1px solid;
+    margin-bottom: 10px;
+}
+
+.left-order {
+    margin-left: 15px;
+    height: auto;
+    margin-right: 10px;
+    margin-top: 10px;
+    border: 1px solid;
+    overflow: hidden;
+}
+
+.left-orders {
+    margin-left: 36px;
+    height: auto;
+    border: 1px solid;
+    width: 40px;
+    padding-bottom: 1px;
+}
+
+.search {
+    margin-left: 15px;
+    height: auto;
+    margin-right: 150px;
+    margin-top: 10px;
+    border: 1px solid;
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: grey;
+}
+
+.ruppee {
+    font-size: large;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.det-left {
+    float: left;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.det-right {
+    float: right;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.AI {
+    font-size: small;
+    display: flex;
+}
