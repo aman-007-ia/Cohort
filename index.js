@@ -147,58 +147,65 @@ var data = [{
 var btn = document.getElementById("btn");
 
 var d_date = document.getElementById("d_date");
-var fligth = document.getElementById("fligths");
+
 var r_date = document.getElementById("r_date");
-var range = document.getElementById("range-bar");
-var text = document.getElementById("text-right");
-var origin = document.getElementById("origin");
-var dest = document.getElementById("dest");
-var city = document.getElementById("text-left");
 
 
 btn.addEventListener("click", fnc = () => {
-    city.className = "text-left";
-    city.innerHTML = ` <b> ${origin.value} > ${dest.value} > ${origin.value}</b>`;
-    text.className = "text-right";
-    text.innerHTML = `Depart : ${d_date.value}<br> Return : ${r_date.value}`;
-
+    
 
     for (var i = 0; i < data.length; i++) {
         if (data[i].del_pune.d_date === d_date.value && data[i].del_pune.a_date === r_date.value) {
 
             addDom(data[i]);
+            console.log(data[i]);
         }
     }
 
 });
 
 function addDom(e) {
-    var card = document.createElement("div");
+    var container = document.createElement("div");
     var ruppee = document.createElement("div");
-    var details = document.createElement("div");
-    var detleft = document.createElement("div");
-    var detright = document.createElement("div");
+    var card = document.createElement("div");
+    var firstcol = document.createElement("div");
+    var secondcol = document.createElement("div");
+    var thirdcol = document.createElement("div");
     var ai = document.createElement("div");
-    var br = document.createElement("br");
-    ruppee.className = "ruppee";
-    ruppee.innerHTML = e.del_pune.rupee;
-    card.appendChild(ruppee);
+    var img = document.createElement("img");
+    var book = document.createElement("div");
+    var btn = document.createElement("button");
 
+    ruppee.className="ruppee";
+    ruppee.innerHTML=`<b>RS.${e.del_pune.rupee}</b>`;
 
-    detright.className = "det-right";
-    detleft.className = "det-left";
+    card.className="card";
+    firstcol.className="first-col";
+    secondcol.className="second-col";
+    thirdcol.className="third-col";
+    
+    firstcol.innerHTML=`AI 202 <br>PNQ>DEL<br> Depart: ${e.del_pune.d_time} <br> Arrive: ${e.del_pune.a_time}`;
 
-    detright.innerHTML = `AI 202 <br> <b> PNQ>DEL </b><br>Depart: ${e.del_pune.d_time}<br>Arrive ${e.del_pune.a_time} `;
-
-    detleft.innerHTML = `AI 203 <br><b> DEL>PNQ </b> <br>Depart: ${e.pune_del.d_time}<br> Arrive: ${e.del_pune.a_time}`;
-    details.appendChild(detleft);
-    details.appendChild(detright);
-    card.className = "card";
-
-    card.appendChild(details);
-
+   
+    secondcol.innerHTML=` AI 202<br>DEL>PNQ <br> Depart ${e.pune_del.d_time} <br> Arrive:${e.pune_del.a_time}`
 
 
 
-    document.getElementById("fligths").appendChild(card);
+    img.src="photo/istockphoto-155439315-170667a.jpg";
+   img.width="120";
+    book.className="book";
+    btn.innerHTML="book this flight";
+    book.appendChild(btn);
+    thirdcol.appendChild(img);
+    thirdcol.appendChild(book);
+    card.appendChild(firstcol);
+    card.appendChild(secondcol);
+    card.appendChild(thirdcol);
+    container.className="container-1";
+    container.appendChild(ruppee);
+    container.appendChild(card);    
+    
+   
+
+    document.getElementById("fligths").appendChild(container);
 }
