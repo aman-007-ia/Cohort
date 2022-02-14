@@ -1,5 +1,7 @@
 .container {
     background-image: url("/istockphoto-1097481110-612x612.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     border: 1px solid;
     margin: 10px;
     height: 500px;
@@ -20,7 +22,6 @@
     padding: 10px;
 }
 
-.top-left {}
 
 .left-side {
     float: left;
@@ -58,7 +59,7 @@
     margin: 10px;
 }
 
-.search {}
+
 
 .right {
     border-left: 1px solid;
