@@ -191,7 +191,7 @@ function addDom(e) {
 
 
 
-    img.src="photo/istockphoto-155439315-170667a.jpg";
+    img.src="/istockphoto-155439315-170667a.jpg";
    img.width="120";
     book.className="book";
     btn.innerHTML="book this flight";
